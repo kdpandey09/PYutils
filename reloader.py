@@ -10,4 +10,5 @@ time.sleep(5)
 # loop for multiple reloding 
 for i in range (number):
     time.sleep(4)
+    #hotkey first presses ctrl + r 
     pg.hotkey('ctrl', 'r')

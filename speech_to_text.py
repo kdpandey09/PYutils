@@ -1,6 +1,7 @@
 import speech_recognition as s
 r = s.Recognizer()
 print("I am Listening you....")
+# under work
 
 with s.Microphone() as source:
     audio = r.listen(source)
