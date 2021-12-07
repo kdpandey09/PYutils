@@ -2,6 +2,7 @@ import pyautogui as pg
 import time
 person = str(input("Enter the name of the person as per your contact \n"))
 Message = str(input("what message do you want to send them \n"))
+number = int(input("Enter the number of times you want to send the message\n"))
 pg.press('win')
 time.sleep(3)
 pg.write('whatsapp')
@@ -14,5 +15,7 @@ pg.write(person)
 time.sleep(2)
 pg.press('enter')
 time.sleep(2)
-pg.write(Message)
-pg.press('enter')
+for i in range(number):
+    time.sleep(1)
+    pg.write(Message)
+    pg.press('enter')
