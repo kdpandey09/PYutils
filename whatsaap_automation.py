@@ -14,6 +14,7 @@ time.sleep(3)
 pg.write(person)
 time.sleep(2)
 pg.press('enter')
+# makes code work after 2 seconds
 time.sleep(2)
 for i in range(number):
     time.sleep(1)
